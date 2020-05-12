@@ -36,7 +36,7 @@ const App = () => {
       </h1>
       <p className="hero-text">
         A free REST API for bad advice (bad advice as a service). Feel free to
-        use it in any projects where good advice isn’t a requirement.
+        use it in any project where good advice isn’t a requirement.
       </p>
 
       <h2>Usage</h2>
@@ -46,6 +46,7 @@ const App = () => {
       <h3>Retrieve multiple random advice</h3>
       <Get url="https//badavice.rest/api/5" />
       <Response result={multipleResult} refresh={getMultipleAdvice} />
+      <footer><span className="peace-emoji" role="img" aria-label="hidden">✌️</span>Made by <a href="https://www.adamparsons.me" className="link">Adam Parsons</a> </footer>
     </main>
   );
 };

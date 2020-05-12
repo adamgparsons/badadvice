@@ -29,8 +29,9 @@ body {
 }
 
 main {
-  max-width: 800px;
+  max-width: 720px;
   margin: 0 auto;
+  margin-top: var(--s7);
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -97,6 +98,10 @@ p {
   margin-bottom: var(--s4);
 }
 
+.response-container {
+  margin-bottom: var(--s6);
+}
+
 .response-header {
   display: flex;
 
@@ -141,14 +146,14 @@ code {
   color: var(--brand-blue);
   font-family: "Source Code Pro", monospace;
 }
-.refresh-button {
+.link {
   border: none;
   background: none;
   font-family: "Inter", sans-serif;
   font-weight: 800;
   font-size: var(--f5);
   color: var(--brand-blue);
-  /* text-decoration: underline; */
+  text-decoration: none;
   border-bottom: 2px solid var(--brand-blue);
   margin-right: 12px;
   padding-left: 0px;
@@ -157,7 +162,19 @@ code {
   transition: ease-in 0.15s border-bottom;
 }
 
-.refresh-button:hover {
+.link:hover {
   cursor: pointer;
   border-bottom: 2px solid transparent;
+}
+
+footer {
+  margin-top: var(--s7);
+  margin-bottom: var(--s6)
+}
+
+.peace-emoji {
+  font-size: 29px;
+  top: 4px;
+  position: relative;
+  padding-right: 2px;
 }

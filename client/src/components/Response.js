@@ -5,7 +5,7 @@ const Response = ({ result, refresh }) => {
     <div className="response-container">
       <div className="response-header">
         <p>Response</p>
-        <button className="refresh-button" onClick={() => refresh()}>
+        <button className="link" onClick={() => refresh()}>
           Refresh
         </button>
       </div>
