@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "BadAdvice",
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@now/node@canary"
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "src/index.js" }],
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "1337",
+    "DATBASE_URL": "@badadvice-db",
+    "CORS_ORIGIN": ""
+  }
+}

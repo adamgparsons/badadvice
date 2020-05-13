@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const path = require('path');
 const helmet = require('helmet');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -10,7 +11,7 @@ const middlewares = require('./middlewares');
 const adviceRoutes = require('./api/advice_routes');
 
 const app = express(express.json());
-
+app.use(express.static('build'));
 mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -23,6 +24,10 @@ app.use(
     origin: process.env.CORS_ORIGIN,
   })
 );
+
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve('build/index.html'));
+});
 
 app.use('/api/', adviceRoutes);
 app.use(middlewares.notFound);

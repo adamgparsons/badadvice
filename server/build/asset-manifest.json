@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "./static/css/main.90d73686.chunk.css",
+    "main.js": "./static/js/main.bf38df01.chunk.js",
+    "main.js.map": "./static/js/main.bf38df01.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.544b41fd.js",
+    "runtime-main.js.map": "./static/js/runtime-main.544b41fd.js.map",
+    "static/js/2.839e3fc8.chunk.js": "./static/js/2.839e3fc8.chunk.js",
+    "static/js/2.839e3fc8.chunk.js.map": "./static/js/2.839e3fc8.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.f01eb1f881c90522ba46a37c62761083.js": "./precache-manifest.f01eb1f881c90522ba46a37c62761083.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.90d73686.chunk.css.map": "./static/css/main.90d73686.chunk.css.map",
+    "static/js/2.839e3fc8.chunk.js.LICENSE.txt": "./static/js/2.839e3fc8.chunk.js.LICENSE.txt",
+    "static/media/Inter-Black.ttf": "./static/media/Inter-Black.de70a8a9.ttf",
+    "static/media/Inter-Bold.ttf": "./static/media/Inter-Bold.c73899df.ttf",
+    "static/media/Inter-Regular.ttf": "./static/media/Inter-Regular.56786aa1.ttf",
+    "static/media/logo.svg": "./static/media/logo.9c84ab11.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.544b41fd.js",
+    "static/js/2.839e3fc8.chunk.js",
+    "static/css/main.90d73686.chunk.css",
+    "static/js/main.bf38df01.chunk.js"
+  ]
+}
