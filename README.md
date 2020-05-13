@@ -3,9 +3,10 @@
 A free REST API for bad advice (bad advice as a service). Use it in any project where good advice isn’t a requirement.
 
 <br>
-##Usage
+## Usage
 
-###Retrieve random advice
+### Retrieve random advice
+
 GET `https//badavice.rest/api/`
 
 Example Response:
@@ -14,7 +15,8 @@ Example Response:
 
 <br>
 
-###Retrieve multiple random advice
+### Retrieve multiple random advice
+
 GET `https//badavice.rest/api/5`
 
 Example Response:
