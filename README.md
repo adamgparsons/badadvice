@@ -3,6 +3,7 @@
 A free REST API for bad advice (bad advice as a service). Use it in any project where good advice isn’t a requirement.
 
 <br>
+
 ## Usage
 
 ### Retrieve random advice
