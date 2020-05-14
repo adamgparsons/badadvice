@@ -8,10 +8,10 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const middlewares = require('./middlewares');
-const adviceRoutes = require('./api/advice_routes');
+const adviceRoutes = require('./routes/advice_routes');
 
 const app = express(express.json());
-app.use(express.static('build'));
+app.use('/', express.static(path.join(__dirname, '../build')));
 mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
