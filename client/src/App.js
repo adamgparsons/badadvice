@@ -14,12 +14,12 @@ const App = () => {
   const [multipleResult, setMultipleResult] = useState();
 
   const getSingleAdvice = async () => {
-    return await fetch(url).then((response) =>
+    return await fetch(url + "/random").then((response) =>
       response.json().then((data) => setSingleResult(data))
     );
   };
   const getMultipleAdvice = async () => {
-    return await fetch(url + 5).then((response) =>
+    return await fetch(url + "count=5").then((response) =>
       response.json().then((data) => setMultipleResult(data))
     );
   };
@@ -44,10 +44,10 @@ const App = () => {
 
       <h2>Usage</h2>
       <h3>Retrieve random advice</h3>
-      <Get url="https://badadvice.rest/api/" />
+      <Get url="https://badadvice.rest/api/random" />
       <Response result={singleResult} refresh={getSingleAdvice} />
       <h3>Retrieve multiple random advice</h3>
-      <Get url="https://badadvice.rest/api/5" />
+      <Get url="https://badadvice.rest/api/count=5" />
       <Response result={multipleResult} refresh={getMultipleAdvice} />
       <footer>
         <span className="peace-emoji" role="img" aria-label="hidden">
