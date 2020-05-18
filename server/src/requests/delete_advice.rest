@@ -1,0 +1,1 @@
+DELETE http://localhost:1337/api/id=5ec2a873a4968e3b413efa9f

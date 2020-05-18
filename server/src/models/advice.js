@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const adviceSchema = new Schema({
-  advice: {
+  bad_advice: {
     type: String,
     maxlength: 150,
   },

@@ -4,13 +4,20 @@ const path = require('path');
 const helmet = require('helmet');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
 require('dotenv').config();
 
 const middlewares = require('./middlewares');
 const adviceRoutes = require('./routes/advice_routes');
 
-const app = express(express.json());
+const app = express();
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(bodyParser.json());
 app.use('/', express.static(path.join(__dirname, '../build')));
 mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
