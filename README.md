@@ -8,7 +8,7 @@ A free REST API for bad advice (bad advice as a service). Use it in any project 
 
 ### Retrieve random advice
 
-GET `https//badavice.rest/api/`
+GET `https//badavice.rest/api/random`
 
 Example Response:
 
@@ -18,7 +18,7 @@ Example Response:
 
 ### Retrieve multiple random advice
 
-GET `https//badavice.rest/api/5`
+GET `https//badavice.rest/api/count=5`
 
 Example Response:
 

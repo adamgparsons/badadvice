@@ -50,13 +50,20 @@ const App = () => {
       <Get url="https://badadvice.rest/api/count=5" />
       <Response result={multipleResult} refresh={getMultipleAdvice} />
       <footer>
-        <span className="peace-emoji" role="img" aria-label="hidden">
-          ✌️
-        </span>
-        Made by{" "}
-        <a href="https://www.adamparsons.me" className="link">
-          Adam Parsons
-        </a>{" "}
+        <div>
+          <span className="peace-emoji" role="img" aria-label="hidden">
+            ✌️
+          </span>
+          Made by{" "}
+          <a href="https://www.adamparsons.me" className="link">
+            Adam Parsons
+          </a>
+        </div>
+        <div className="github">
+          <a href="https://github.com/adamgparsons/badadvice" class="link">
+            GitHub
+          </a>
+        </div>
       </footer>
     </main>
   );

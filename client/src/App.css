@@ -36,6 +36,12 @@ main {
   padding-right: 16px;
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: var(--s6);
+  }
+}
+
 h1 {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -169,6 +175,9 @@ code {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: var(--s7);
   margin-bottom: var(--s6);
 }
@@ -178,4 +187,10 @@ footer {
   top: 4px;
   position: relative;
   padding-right: 2px;
+}
+
+.github {
+  text-align: right;
+  top: 4px;
+  position: relative;
 }

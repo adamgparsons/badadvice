@@ -6,6 +6,10 @@ const adviceSchema = new Schema({
     type: String,
     maxlength: 150,
   },
+  date_created: {
+    type: Date,
+    required: true,
+  },
 });
 
 adviceSchema.set('toJSON', {
