@@ -1,6 +1,0 @@
-POST  http://localhost:1337/api/
-Content-Type: application/json
-
-{
-    "bad_advice": "It's never too late to start again, until it is"
-}

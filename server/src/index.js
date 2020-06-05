@@ -1,5 +1,5 @@
 const express = require('express');
-const morgan = require('morgan');
+const volleyball = require('volleyball');
 const path = require('path');
 const helmet = require('helmet');
 const cors = require('cors');
@@ -10,8 +10,11 @@ require('dotenv').config();
 
 const middlewares = require('./middlewares');
 const adviceRoutes = require('./routes/advice_routes');
+const adminRoutes = require('./routes/admin_routes');
+const authRoutes = require('./routes/auth_routes');
 
 const app = express();
+app.use(middlewares.checkTokenSetUser);
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -24,7 +27,7 @@ mongoose.connect(process.env.DATABASE_URL, {
   useUnifiedTopology: true,
 });
 
-app.use(morgan('common'));
+app.use(volleyball);
 app.use(helmet());
 app.use(
   cors({
@@ -32,11 +35,12 @@ app.use(
   })
 );
 
-app.get('/', (req, res) => {
+app.use('/api/', adviceRoutes);
+app.use('/api/admin', middlewares.isLoggedIn, adminRoutes);
+app.use('/auth/', authRoutes);
+app.get('*', (req, res) => {
   res.sendFile(path.resolve('build/index.html'));
 });
-
-app.use('/api/', adviceRoutes);
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);
 

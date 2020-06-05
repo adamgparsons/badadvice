@@ -1,7 +1,8 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+/* eslint-disable no-param-reassign */
 
-const adviceSchema = new Schema({
+const mongoose = require('mongoose');
+
+const adviceSchema = new mongoose.Schema({
   bad_advice: {
     type: String,
     maxlength: 150,
@@ -9,12 +10,6 @@ const adviceSchema = new Schema({
   date_created: {
     type: Date,
     required: true,
-  },
-});
-
-adviceSchema.set('toJSON', {
-  transform: (document, returnedObject) => {
-    delete returnedObject._id;
   },
 });
 

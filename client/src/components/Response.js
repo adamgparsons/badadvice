@@ -16,9 +16,9 @@ const Response = ({ result, refresh }) => {
             [
             <br />
             {result.map((singleAdvice) => (
-              <>
+              <React.Fragment key={singleAdvice}>
                 {""} "{singleAdvice}",<br></br>
-              </>
+              </React.Fragment>
             ))}
             ]
           </code>
