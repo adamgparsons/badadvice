@@ -44,10 +44,10 @@ const Docs = () => {
 
         <h2>Usage</h2>
         <h3>Retrieve random advice</h3>
-        <Get url="https://badadvice.rest/api/random" />
+        <Get url="https://badadvice.vercel.app/api/random" />
         <Response result={singleResult} refresh={getSingleAdvice} />
         <h3>Retrieve multiple random advice</h3>
-        <Get url="https://badadvice.rest/api/count=5" />
+        <Get url="https://badadvice.vercel.app/api/count=5" />
         <Response result={multipleResult} refresh={getMultipleAdvice} />
         <footer>
           <div>
