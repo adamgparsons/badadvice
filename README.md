@@ -8,7 +8,7 @@ A free REST API for bad advice (bad advice as a service). Use it in any project 
 
 ### Retrieve random advice
 
-GET `https//badavice.rest/api/random`
+GET `https://badadvice.vercel.app/api/random`
 
 Example Response:
 
@@ -18,7 +18,7 @@ Example Response:
 
 ### Retrieve multiple random advice
 
-GET `https//badavice.rest/api/count=5`
+GET `https://badadvice.vercel.app/api/count=5`
 
 Example Response:
 
