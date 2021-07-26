@@ -6,7 +6,7 @@ import Logo from "../images/logo.svg";
 const adviceAdminUrl =
   window.location.hostname === "localhost"
     ? "http://localhost:1337/api/admin"
-    : "https://badadvice.rest/api/admin";
+    : "https://badadvice.vercel.app/api/admin";
 
 const Dashboard = () => {
   const [existingAdvice, setExistingAdvice] = useState();

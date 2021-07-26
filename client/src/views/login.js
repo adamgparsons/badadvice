@@ -6,7 +6,7 @@ import Logo from "../images/logo.svg";
 const url =
   window.location.hostname === "localhost"
     ? "http://localhost:1337/auth/login"
-    : "https://badadvice.rest/auth/login";
+    : "https://badadvice.vercel.app/auth/login";
 
 const Login = () => {
   const [loginDetails, setLoginDetails] = useState({

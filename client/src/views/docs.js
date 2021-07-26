@@ -6,7 +6,7 @@ import Logo from "../images/logo.svg";
 const url =
   window.location.hostname === "localhost"
     ? "http://localhost:1337/api/"
-    : "https://badadvice.rest/api/";
+    : "https://badadvice.vercel.app/api/";
 
 const Docs = () => {
   const [singleResult, setSingleResult] = useState();
